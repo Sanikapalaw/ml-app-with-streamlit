@@ -44,4 +44,12 @@ input_df = pd.DataFrame(data, index=[0])
 
 # Combine input with dataset
 input_penguins = pd.concat([input_df, X], axis=0)
-st.write(input_penguins)
+
+with st.expander('Input features')
+    st.write("**Input Pengiuns**")
+    input.df
+    st.write("**Combined data**")
+    input_pengiuns
+    
+
+
