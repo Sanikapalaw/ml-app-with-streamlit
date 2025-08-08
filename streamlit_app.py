@@ -30,5 +30,18 @@ with st.sidebar:
   island=st.selectbox('Island',('Biscoe','Dream','Torgersen'))
   island=st.selectbox('Gender',('male','female'))
   bill_length_mm=st.slider('Bill length (mm)',32.1,59.6,43.9)
+
+
+#Create a data frame with input features
+data={'island',island,
+      'bill_length_mm',bill_length_mm,
+      'bill_depth_mm',bill_depth_mm,
+      'flipper_length_mm',flipper_length_mm,
+      'body_mass_g',body_mass_g,
+      'gender',gender}
+input_df=pd.DataFrame(data,index[0])
+input_df
+      
+      
   
                    
